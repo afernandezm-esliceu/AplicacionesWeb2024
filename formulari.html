@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="rap, música, hip hop, cultura urbana">
+    <meta name="author" content="Agustín Fernández Mendoza">
+    <meta name="description" content="Formulario sobre música.">
+
     <link rel="icon" type="image/png" href="img/formicon.png">
     <title>Formulario</title>
 </head>
 <body>
     <header>
+        <a href="index.html"><img src="img/CTDSVOl3.jpg" alt="Portada del álbum CTDSVol3" width="100" title="Vuelta al índice"></a>
         <h1>MI FORMULARIO</h1>
         <p>En este formulario estará centrado en la música underground de España. Podrás elegir tu genero favorito, tu artista favorito y mucho mas.</p>
     </header>
     <main>
-        <div>
             <form action="index.html" method="get">
                 <div>
                     <p>
@@ -29,8 +33,59 @@
                         <label for="correo">Correo electronico: </label>
                         <input type="email" name="" id="email" placeholder="tucorreo@gmail.com" required>
                         <label for="password">Contraseña: </label>
-                        <input type="password" name="password" id="password" placeholder="Introduce tu contraseña" required title="La contraseña debe de tener un mínimo de 10 caracteres, una mayúscula, un numero y un simbolo especial." pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{10,}$"> <!-- Como quería que la contraseña tuviera unos requisitos mínimos busqué y con el pattern he visto que se puede hacer. No sé si habrá una manera mas sencilla porque me parece bastante lioso pero es lo que he encontrado con HTML.-->
+                        <input type="password" name="password" minlength="10" maxlength="32" id="password" placeholder="Introduce tu contraseña" required title="La contraseña debe de tener un mínimo de 10 caracteres, una mayúscula, un numero y un simbolo especial." pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{10,}$"> <!-- Como quería que la contraseña tuviera unos requisitos mínimos busqué y con el pattern he visto que se puede hacer. No sé si habrá una manera mas sencilla porque me parece bastante lioso pero es lo que he encontrado con HTML.-->
                     </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="fecha">Fecha de nacimiento: </label>
+                        <input type="date" name="fecha" id="fecha">
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <span>Genero favorito:</span>
+                        <input type="radio" name="generofav" id="rap">
+                        <label for="rap">Rap</label>
+                        <input type="radio" name="generofav" id="trap">
+                        <label for="trap">Trap</label>
+                        <input type="radio" name="generofav" id="detroit">
+                        <label for="detroit">Detroit</label>
+                    </p>
+                </div>
+                <div>
+                    <span>Artistas favoritos (2):</span>
+                    <input type="checkbox" name="artistafav" id="gloosito">
+                    <label for="gloosito">Gloosito</label>
+                    <input type="checkbox" name="artistafav" id="hoke">
+                    <label for="hoke">Hoke</label>
+                    <input type="checkbox" name="artistafav" id="jaydime">
+                    <label for="jaydime">Jay Dime</label>
+                    <input type="checkbox" name="artistafav" id="illpekeño">
+                    <label for="illpekeño">Ill Pekeño</label>
+                    <input type="checkbox" name="artistafav" id="ergopro">
+                    <label for="ergopro">Ergo Pro</label>
+                </div>
+                <div>
+                    <p>
+                        <label for="cancion">Cancion favorita: </label>
+                        <select name="cancion" id="cancion">
+                            <option value="0">Elige una canción</option>
+                            <option value="1">Calle Cortada Ft. Hoke</option>
+                            <option value="2">Navajas y percebes</option>
+                            <option value="3">The Lox</option>
+                            <option value="4">MAD BTC</option>
+                            <option value="5">RF Universidad</option>
+                            <option value="6">Big Lucio</option>
+                            <option value="7">Ebay</option>
+                            <option value="8">No puede ser</option>
+                            <option value="9">En el infierno de tu gloria</option>
+                            <option value="10">Olympique</option>
+                        </select>
+                    </p>
+                </div>
+                <div>
+                    <textarea name="contenido" id="" cols="30" rows="10" placeholder="¿Tu canción favorita no está en la lista anterior? Escríbela aquí"></textarea>
                 </div>
                 <div>
                     <p>
@@ -39,6 +94,9 @@
                     </p>
                 </div>
             </form>
+        </div>
+        <div>
+            <p>TEXTO FINAL</p>
         </div>
     </main>
     <footer>
