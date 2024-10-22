@@ -30,8 +30,8 @@
                 </div>
                 <div>
                     <p>
-                        <label for="correo">Correo electronico: </label>
-                        <input type="email" name="" id="email" placeholder="tucorreo@gmail.com" required>
+                        <label for="email">Correo electronico: </label>
+                        <input type="email" name="correo" id="email" placeholder="tucorreo@gmail.com" required>
                         <label for="password">Contraseña: </label>
                         <input type="password" name="password" minlength="10" maxlength="32" id="password" placeholder="Introduce tu contraseña" required title="La contraseña debe de tener un mínimo de 10 caracteres, una mayúscula, un numero y un simbolo especial." pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{10,}$"> <!-- Como quería que la contraseña tuviera unos requisitos mínimos busqué y con el pattern he visto que se puede hacer. No sé si habrá una manera mas sencilla porque me parece bastante lioso pero es lo que he encontrado con HTML.-->
                     </p>
@@ -54,7 +54,7 @@
                     </p>
                 </div>
                 <div>
-                    <span>Artistas favoritos (2):</span>
+                    <span>Artistas favoritos:</span>
                     <input type="checkbox" name="artistafav" id="gloosito">
                     <label for="gloosito">Gloosito</label>
                     <input type="checkbox" name="artistafav" id="hoke">
@@ -85,7 +85,9 @@
                     </p>
                 </div>
                 <div>
-                    <textarea name="contenido" id="" cols="30" rows="10" placeholder="¿Tu canción favorita no está en la lista anterior? Escríbela aquí"></textarea>
+                    <textarea name="contenido" id="text" cols="30" rows="10" placeholder="¿Tu canción favorita no está en la lista anterior? Escríbela aquí"></textarea>
+                    <label for="age">¿Del 1 al 10 cuanto te ha gustado el formulario?</label>
+                    <input type="number" id="valoracion" name="valoracion" min="1" max="10">
                 </div>
                 <div>
                     <p>
@@ -94,9 +96,8 @@
                     </p>
                 </div>
             </form>
-        </div>
         <div>
-            <p>TEXTO FINAL</p>
+            <p>Hasta aquí el formulario. Espero que te haya gustado.</p>
         </div>
     </main>
     <footer>
