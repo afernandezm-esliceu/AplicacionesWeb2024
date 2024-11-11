@@ -1,3 +1,37 @@
-#cabecera{
-    background-color: green;
+#NarutoIMG1 {
+    margin: 25px;
+    padding: 10px;
+    opacity: 100%;
 }
+
+#NarutoIMG1:hover {
+    width: 900px;
+    opacity: 80%;
+    transition: opacity 1s, width 450ms;
+}
+
+body {
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+  }
+
+#tabla {
+    border-collapse: separate;
+    border-spacing: 5px;     
+    border: 2px solid black; 
+}
+
+#tabla td, #tabla th {
+    border: 1px solid gray;
+    padding: 10px;             
+}
+
+h1 {
+    text-align: center;
+}
+  
