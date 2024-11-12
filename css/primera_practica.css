@@ -11,7 +11,7 @@
 }
 
 body {
-    background-image: url('../img/fondo.jpg');
+    background-image: url('../img/fondo_practica1.jpg');
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
@@ -33,5 +33,29 @@ body {
 
 h1 {
     text-align: center;
+    font-size: 50px;
 }
-  
+
+.Subtitulos {
+  letter-spacing: 1px; 
+  text-transform: uppercase;
+}
+
+ul {
+    list-style-type:upper-roman 
+}
+
+#titulo_tabla {
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-size: 20px;
+   padding: 10px;
+   margin: 10px; 
+}
+
+#primer_subtitulo {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px;
+    margin: 10px;
+}
