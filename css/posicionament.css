@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: rgb(199, 14, 14);
+    color: white;
+    height: 15vh;
+}
+
+#logo {
+    font-size: xx-large;
+    float: left;
+    line-height: 10vh;
+}
+
+#menu {
+    font-size: x-large;
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#menu span {
+    margin-right: 15px;
+    line-height: 10vh;
+}
