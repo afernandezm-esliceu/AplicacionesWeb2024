@@ -92,3 +92,46 @@ a:hover {
     text-align: center;
     color: #d40b0b;
 }
+
+.IMGsAlbumes {
+    width: 15%;
+}
+
+#albumes {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .album {
+    border: 2px solid #d40b0b;
+    border-radius: 10px; 
+    padding: 15px; 
+    margin: 15px auto; 
+    width: 200px;
+    background-color: #f9f9f9; 
+    text-align: center; 
+  }
+  
+  .IMGsAlbumes {
+    width: 100%; 
+    height: auto; 
+    border-bottom: 1px solid #ccc; 
+    margin-bottom: 10px;
+  }
+  
+  .album h3 {
+    margin: 10px 0; 
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .album p {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+  }
+  
+  .IMGsAlbumes:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+  }
