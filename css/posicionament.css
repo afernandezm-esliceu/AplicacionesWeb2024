@@ -1,8 +1,8 @@
-/* Restablecer márgenes y paddings predeterminados */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: roboto;
 }
 
 nav {
@@ -45,6 +45,7 @@ a {
 
 a:hover {
     color: #f1c40f;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -55,6 +56,8 @@ a:hover {
 #intro h1 {
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 30px;
+    color: #d40b0b;
 }
 
 #intro img {
@@ -68,4 +71,24 @@ a:hover {
 #intro p {
     text-align: center;
     font-size: 160%;
+    padding: 25px;
+    margin-top: 10px;
+}
+
+#logo i {
+    margin-right: 10px;
+}
+
+#intro img {
+    border-radius: 35px;
+
+}
+
+#IMGGloo:hover {
+        transform: scale(1.1);    
+}
+
+#albumes h2 {
+    text-align: center;
+    color: #d40b0b;
 }
