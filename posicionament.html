@@ -12,7 +12,7 @@
     <title>Practica de posicionamiento</title>
 </head>
 <body>
-    <nav>
+    <nav class="barra">
         <div id="logo">
             <i class="fa-solid fa-music"></i><a href="posicionament.html">CTDS</a>     
         </div>
@@ -32,23 +32,61 @@
 
     <div id="albumes">
         <h2>ÁLBUMES CTDS</h2>
-        <div class="album">
-            <img src="img/CTDSVol1.jpeg" alt="CTDSVOL1" class="IMGsAlbumes">
-            <h3>CTDS VOL 1</h3>
-            <p>CTDS Vol. 1 es un álbum de Gloosito y Shynelevell, lanzado en 2020, con 8 canciones y un estilo influenciado por el trap y sonidos urbanos. </p>
+        <div class="contenedorAlbum">
+            <div class="album">
+                <img src="img/CTDSVol1.jpeg" alt="CTDSVOL1" class="IMGsAlbumes">
+                <h3>CTDS VOL 1</h3>
+                <p>CTDS Vol. 1 es un álbum de Gloosito y Shynelevell, lanzado en 2020, con 8 canciones y un estilo influenciado por el trap y sonidos urbanos. </p>
+            </div>
+            
+            <div class="album">
+                <img src="img/CTDSVOL2.jpeg" alt="CTDSVOL2" class="IMGsAlbumes">
+                <h3>CTDS VOL 2</h3>
+                <p>CTDS Vol. 2 es un álbum de Gloosito que incluye 8 canciones en colaboración con artistas como Shynelevell y Jay Dime.</p>
+            </div>
+    
+            <div class="album">
+                <img src="img/CTDSVOl3.jpg" alt="CTDSVOL3" class="IMGsAlbumes">
+                <h3>CTDS VOL 3</h3>
+                <p>CTDS Vol. 3 de Gloosito cierra su trilogía con un estilo marcado por el detroit trap. Incluye colaboraciones con artistas como Baby Murda y Baby Pantera</p>
+            </div>
         </div>
         
-        <div class="album">
-            <img src="img/CTDSVOL2.jpeg" alt="CTDSVOL2" class="IMGsAlbumes">
-            <h3>CTDS VOL 2</h3>
-            <p>CTDS Vol. 2 es un álbum de Gloosito que incluye 8 canciones en colaboración con artistas como Shynelevell y Jay Dime.</p>
-        </div>
-
-        <div class="album">
-            <img src="img/CTDSVOl3.jpg" alt="CTDSVOL3" class="IMGsAlbumes">
-            <h3>CTDS VOL 3</h3>
-            <p>CTDS Vol. 3 de Gloosito cierra su trilogía con un estilo marcado por el detroit trap. Incluye colaboraciones con artistas como Baby Murda y Baby Pantera</p>
-        </div>
     </div>
+    
+    <div class="SobreNosotros">
+        <h2>Sobre Nosotros</h2>
+    </div>
+    <div>
+        <img src="img/GloositoYJayDime.jpg" alt="Gloosito y Jay Dime" id="sobrenosotrosimg">
+        <p id="textoderecha">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem harum itaque magnam explicabo, minus sunt laboriosam? Voluptatem necessitatibus velit maxime in, excepturi quisquam, incidunt molestiae, non maiores ad illum laborum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae consectetur sint iste cupiditate ut officia nam sed distinctio enim provident unde aut incidunt numquam non quae, nesciunt temporibus totam impedit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi temporibus voluptatibus beatae quas ut consequuntur accusamus unde veritatis provident quis amet, illo molestias. Ullam minus dolor optio qui, praesentium odit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magnam minus quibusdam ipsa rerum perferendis dolorum, reiciendis iure, molestias vitae sunt fugiat. Tenetur dignissimos nobis libero pariatur sint corrupti voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="elformulario">
+        <h2 id="ajuste">Contacto</h2>
+        <form action="index.html" method="get" id="formulario">
+            <div>
+                <label for="nombre">Nombre: </label>
+                        <input type="text" name="nombre" id="nombre" required placeholder="Introduce tu nombre" maxlength="25">
+            </div>
+            <div>
+                <label for="email" id="emailtxt">Correo electronico: </label>
+                        <input type="email" name="correo" id="email" placeholder="tucorreo@gmail.com" required>
+            </div>
+            <div>
+                <textarea name="contenido" id="text" cols="30" rows="10" placeholder="Deja tu mensaje"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Enviar formulario">
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <footer id="nombre">
+            <p>Agustín Fernández Mendoza</p>
+            <p><i class="fa-solid fa-cloud"></i> <a href="#">Soundcloud</a></p>
+        </footer>   
+    </footer>
 </body>
 </html>
