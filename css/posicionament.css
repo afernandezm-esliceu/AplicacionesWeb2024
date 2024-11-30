@@ -152,6 +152,7 @@ a:hover {
 
 .IMGsAlbumes:hover {
     filter: brightness(1.4);
+    transform: scale(1.05);
 }
 
 .SobreNosotros h2 {
@@ -191,7 +192,8 @@ a:hover {
     margin-top: 25px;
     margin-left: 50px;
     text-align: center;
-    width: 300px;  
+    width: 350px;  
+    margin: 0 auto;
 }
 
 #email {
@@ -236,3 +238,4 @@ footer{
     height: 15vh;
     font-size: 28px;
 }
+
