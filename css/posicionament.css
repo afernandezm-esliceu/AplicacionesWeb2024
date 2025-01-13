@@ -235,7 +235,7 @@ footer{
     text-align: center;
     background-color: rgb(180, 20, 20);
     color: white;
-    height: 15vh;
-    font-size: 28px;
+    position: relative;
+    width: 100%;
 }
 
