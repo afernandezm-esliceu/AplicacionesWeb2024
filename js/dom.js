@@ -1,6 +1,9 @@
 const boton1 = document.querySelector("#boton1");
 const mensaje = document.querySelector("#mensaje");
-const footer = document.querySelector("footer")
+const footer = document.querySelector("footer");
+const btnIniciarIntervalo = document.querySelector("#btnIniciarIntervalo");
+const reloj = document.querySelector("#reloj");
+btnIniciarIntervalo.onclick = iniciarIntervalo;
 boton1.onclick = tocame;
 let contador = 0;
 
@@ -38,4 +41,35 @@ function suma(a, b){
 
 function resta (a, b){
     return a-b
+}
+
+function generarNumeroAleatorio(){
+    return parseInt(Math.random()*1000)
+}
+
+var intervalo;
+
+function pintaNumerosAleatorios(){
+    var valor = generarNumeroAleatorio();
+    mensaje.textContent = valor;
+    if (valor == 999) clearInterval(intervalo);
+}
+
+function iniciarIntervalo(){
+    intervalo = setInterval(pintaNumerosAleatorios, 1);
+};
+
+function paraIntervalo(){
+    clearInterval(intervalo);
+    intervalo = null
+}
+
+function pintaReloj(){
+    segundos++;
+    if (segundos >= 60) minutos++;
+    pintaReloj.textContent = `${minutos}:${segundos}`;
+}
+
+function iniciarReloj(){
+    setInterval(pintaReloj, 1000);
 }
