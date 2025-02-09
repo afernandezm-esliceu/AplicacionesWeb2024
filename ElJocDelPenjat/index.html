@@ -2,11 +2,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Joc Del "Penjat"</title>
-    <link rel="stylesheet" href="estilos.css">
-    <script src="./js/dom.js" defer></script>
+    <title>El juego del ahorcado</title>
+    <link rel="stylesheet" href="estilospenjat.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
 <body>
+    <div id="titulo">
+        <h1>EL AHORCADO</h1>
+    </div>
+
+    <div id="tiempo">
+        <div id="time"></div>
+    </div>
     
+    <div id="dificultad">
+        <label for="dif">
+            <select name="dif" id="dif">
+                <option value="facil">Fácil</option>
+                <option value="medio">Intermedio</option>
+                <option value="dificil">Difícil</option>
+            </select>
+        </label>
+    
+        <button id="finalizar">Finalizar Partida</button>
+        <button id="pista">Pedir pista</button>
+    </div>
+
+    <div id="contenedor-externo">
+        <div id="contenedor-central">
+            <img src="img/img07.svg" alt="">
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>

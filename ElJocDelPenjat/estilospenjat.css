@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.6;
+    background-image: url('img/wallpapersden.com_escape-hd-minimal-cool_1920x1080.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+
+#titulo {
+    text-align: center;
+    background-color: #ffe680;
+}
+
+#time {
+    display: flex;          
+    justify-content: center;
+    text-align: center; 
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #ff7043;
+}
+
+#dificultad {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background-color: white;
+    width: 350px;
+    border-radius: 10px;
+    position: fixed;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+#dif {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+#finalizar {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%; 
+}
+
+#finalizar:hover {
+    background-color: darkred;
+}
+
+#pista {
+    margin-top: 10px;
+    width: 100%;
+    background-color: gray;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#pista:hover {
+    background-color: darkgray;
+}
+
+#contenedor-externo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Esto mueve el div hacia la parte superior */
+    height: 100vh;
+    margin-left: 100px;
+    padding-top: 20px; /* Puedes ajustar este valor para moverlo más arriba o más abajo */
+}
+
+
+#contenedor-central {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 60%;
+    height: 60vh;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
