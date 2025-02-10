@@ -7,32 +7,46 @@
     <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
 <body>
-    <div id="titulo">
-        <h1>EL AHORCADO</h1>
-    </div>
-
-    <div id="tiempo">
-        <div id="time"></div>
-    </div>
-    
-    <div id="dificultad">
-        <label for="dif">
-            <select name="dif" id="dif">
-                <option value="facil">Fácil</option>
-                <option value="medio">Intermedio</option>
-                <option value="dificil">Difícil</option>
-            </select>
-        </label>
-    
-        <button id="finalizar">Finalizar Partida</button>
-        <button id="pista">Pedir pista</button>
-    </div>
-
-    <div id="contenedor-externo">
-        <div id="contenedor-central">
-            <img src="img/img07.svg" alt="">
+    <header>
+        <div id="titulo">
+            <h1>EL AHORCADO</h1>
         </div>
-    </div>
+    
+        <div id="tiempo">
+            <div id="time"></div>
+        </div>
+    </header>
+    
+    <main>
+        <div id="dificultad" class="fondoBlanco">
+            <label for="dif">
+                <select name="dif" id="dif">
+                    <option value="facil">Fácil</option>
+                    <option value="medio">Intermedio</option>
+                    <option value="dificil">Difícil</option>
+                </select>
+            </label>
+        
+            <button id="finalizar">Finalizar Partida</button>
+            <button id="pista">Pedir pista</button>
+        </div>
+    
+        <div id="contenedor-externo" class="fondoBlanco">
+            <div id="contenedor-central">
+                <img src="img/img07.svg" alt="">
+            </div>
+        </div>
+
+        <div id="cajasDerechas">
+            <div id="resumen" class="fondoBlanco">
+                
+            </div>
+
+            <div id="contenedorLog" class="fondoBlanco">
+            </div>
+        </div>
+    </main>
+    
 
     <script src="scripts.js"></script>
 </body>
