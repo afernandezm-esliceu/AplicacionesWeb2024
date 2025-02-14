@@ -80,7 +80,7 @@ body {
 #contenedor-externo {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Esto mueve el div hacia la parte superior */
+    align-items: flex-start;
     width: 60%;
     flex-grow: 3;
     margin-left: 10px;
@@ -93,7 +93,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 60vh;
+    height: 50vh;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 100%;
@@ -111,4 +111,19 @@ main{
     background-color: white;
     border-radius: 10px;
     margin-left: 10px;
+}
+
+#cajasDerechas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    background-color: white;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+#resumen {
+    
 }
