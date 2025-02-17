@@ -82,7 +82,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     width: 60%;
-    flex-grow: 3;
+    flex-grow: 2;
     margin-left: 10px;
 
 }
@@ -104,6 +104,7 @@ main{
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 30px;
+    align-items: stretch;
     flex-wrap: wrap;
 }
 
@@ -118,12 +119,43 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-grow: 1;
-    background-color: white;
+    flex-grow: 4;
     margin-left: 15px;
     border-radius: 10px;
+    gap: 15px;
 }
 
-#resumen {
-    
+.caja {
+    width: 90%; /* O ajusta según tu necesidad */
+    height: 50%; /* Ocupa la mitad del contenedor padre */
+    background-color: white; /* Color de prueba */
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.titulos {
+    text-align: center;
+    margin-top: 5;
+}
+
+.texto {
+    margin-left: 20;
+    margin-top: 20;
+    font-size: 20;
+}
+
+#iniciar {
+    background-color: green;
+    margin-bottom: 10px;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%; 
+}
+
+#iniciar:hover {
+    background-color: darkgreen;
 }
