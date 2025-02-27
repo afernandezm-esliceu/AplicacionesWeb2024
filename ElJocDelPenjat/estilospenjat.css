@@ -16,7 +16,6 @@ body {
     margin: 0;
 }
 
-
 #titulo {
     text-align: center;
     background-color: #ffe680;
@@ -79,14 +78,22 @@ body {
 
 #contenedor-externo {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     width: 60%;
     flex-grow: 2;
     margin-left: 10px;
-
+    gap: 10px; /* Espacio entre los elementos */
 }
 
+#usedLetters, #wordContainer {
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
 #contenedor-central {
     display: flex;
@@ -97,9 +104,10 @@ body {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 100%;
+    margin-top: 20px;
 }
 
-main{
+main {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -108,7 +116,7 @@ main{
     flex-wrap: wrap;
 }
 
-.fondoBlanco{
+.fondoBlanco {
     background-color: white;
     border-radius: 10px;
     margin-left: 10px;

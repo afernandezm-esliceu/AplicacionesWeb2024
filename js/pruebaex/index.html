@@ -1,0 +1,66 @@
+<div>
+    <div>
+        <h2> Poner hora y pasarlo a minutos y segundos </h2>
+    </div>
+    <div>
+
+
+        <p> JavaScript</p>
+        <div class="tiempo-grupo">
+            <input type="time"  id="tiempoInput">
+<button class="btn btn-dark" onclick="tomaTiempo()"> Calcular </button>
+            <label for="conversionType">Convertir a:</label>
+            <select id="conversionType">
+                <option value="seconds">Segundos</option>
+                <option value="minutes">Minutos</option>
+            </select>
+           
+            <div id="resultado"> hey </div>
+        </div>
+    </div>
+
+    <div>
+        <p>Cuantos años tienes?</p>
+        <input type="number" name="edad" id="edad">
+        <button id="enviarEdad" onclick="comprobarEdad()">Enviar</button>
+        <div id="texto">
+        </div>
+    </div>
+
+    <div id="Factorial">
+        <p>Introduce un número para saber su factorial</p>
+        <input type="number" id="numFact">
+        <button id="enviarFactorial" onclick="factorial()">Enviar</button>
+        <div id="resultadoFact">
+
+        </div>
+    </div>
+
+    <div id="introduceTexto">
+        <p>Introduce un texto: </p>
+        <input type="text" name="text" id="textoIntroducido">
+        <button id="enviarTexto" onclick="enviarTexto()">Enviar</button>
+        <div id="nuevoTextoAqui"></div>
+    </div>
+
+    <div id="aleatorio">
+        <p>Numeros aleatorios</p>
+        <button id="numAleatorio" onclick="aleatorio()">mario</button>
+        <div id="numerosAleatorios"></div>
+    </div>
+
+    <div id="operaciones">
+        <p>Sumar dos numeros</p>
+        <input type="number" name="sumatorio1" id="sumatorio1" placeholder="Numero 1">
+        <input type="number" name="sumatorio2" id="sumatorio2" placeholder="Numero 2">
+        <button onclick="sumatorio()">Enviar</button>
+
+        <div id="resultadoSuma"></div>
+    </div>
+
+    <div id="colorAleatorio">
+        <p>Cambiar color del div</p>
+        <button onclick="cambiarColor()">COLOR</button>
+    </div>
+
+    <script src="scripts.js"></script>
