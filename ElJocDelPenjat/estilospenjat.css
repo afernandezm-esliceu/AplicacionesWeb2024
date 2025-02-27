@@ -167,3 +167,10 @@ main {
 #startButton:hover {
     background-color: darkgreen;
 }
+
+#contadorTiempo {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
