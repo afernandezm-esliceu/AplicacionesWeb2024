@@ -1,22 +1,19 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El juego del ahorcado</title>
+    <title>El Juego del Ahorcado</title>
     <link rel="stylesheet" href="estilospenjat.css">
+    <script src="scripts.js" defer></script>
     <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
 <body>
     <header>
-        <div id="titulo">
-            <h1>EL AHORCADO</h1>
-        </div>
-    
-        <div id="tiempo">
-            <div id="time"></div>
-        </div>
+        <h1>EL AHORCADO</h1>
+        <div id="contadorTiempo">00:00</div>
     </header>
-    
+
     <main>
         <div id="dificultad" class="fondoBlanco">
             <label for="dif">
@@ -27,33 +24,35 @@
                 </select>
             </label>
             <button id="startButton">Empezar Partida</button>
-            <button id="finalizar">Finalizar Partida</button>
-            <button id="pista">Pedir pista</button>
+            <button id="pista" disabled>Pedir pista</button>
         </div>
-    
+
         <div id="contenedor-externo" class="fondoBlanco">
-            <div id="contadorTiempo">00:00</div>
             <div id="usedLetters"></div>
             <div id="wordContainer"></div>
             <div id="contenedor-central">
-                <img src="img/img07.svg" alt="">
+                <img id="ahorcadoImg" src="img/img01.svg" alt="Imagen del ahorcado">
             </div>
         </div>
 
         <div id="cajasDerechas">
             <div id="resumen" class="caja">
                 <h2 class="titulos">Resumen</h2>
-                <p id="intentos" class="texto">Intentos restantes: </p>
-                <p id="ganadas" class="texto">Ganadas: </p>
-                <p id="perdidas" class="texto">Perdidas: </p>
+                <p id="intentos" class="texto">Intentos restantes: 6</p>
+                <p id="ganadas" class="texto">Ganadas: <span id="ganadasNum">0</span></p>
+                <p id="perdidas" class="texto">Perdidas: <span id="perdidasNum">0</span></p>
             </div>
 
+                <div class="cajados">
+            <h2 class="log"> Log de eventos </h2>
+        </div>
             <div id="contenedorLog" class="caja">
-                
+
+                <div id="logEventos"></div>
             </div>
         </div>
     </main>
-    
-    <script src="scripts.js"></script>
+
+
 </body>
 </html>

@@ -1,176 +1,197 @@
-* {
+*main { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: Arial;
-    font-size: 16px;
-    line-height: 1.6;
-    background-image: url('img/wallpapersden.com_escape-hd-minimal-cool_1920x1080.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    margin: 0;
-}
-
-#titulo {
-    text-align: center;
-    background-color: #ffe680;
-}
-
-#time {
-    display: flex;          
-    justify-content: center;
-    text-align: center; 
-    margin: 10px;
-    border-radius: 10px;
-    background-color: #ff7043;
-}
-
-#dificultad {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    flex-grow: 1;
-}
-
-#dif {
-    padding: 10px;
-    font-size: 16px;
-    margin-bottom: 15px;
-}
-
-#finalizar {
-    background-color: red;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    width: 100%; 
-}
-
-#finalizar:hover {
-    background-color: darkred;
-}
-
-#pista {
-    margin-top: 10px;
-    width: 100%;
-    background-color: gray;
-    border-radius: 5px;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-#pista:hover {
-    background-color: darkgray;
-}
-
-#contenedor-externo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 60%;
-    flex-grow: 2;
-    margin-left: 10px;
-    gap: 10px; /* Espacio entre los elementos */
-}
-
-#usedLetters, #wordContainer {
-    width: 100%;
-    background-color: white;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-#contenedor-central {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 50vh;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 100%;
-    margin-top: 20px;
-}
-
-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 30px;
-    align-items: stretch;
-    flex-wrap: wrap;
-}
-
-.fondoBlanco {
-    background-color: white;
-    border-radius: 10px;
-    margin-left: 10px;
-}
-
-#cajasDerechas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 4;
-    margin-left: 15px;
-    border-radius: 10px;
-    gap: 15px;
-}
-
-.caja {
-    width: 90%; 
-    height: 50%; 
-    background-color: white; 
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.titulos {
-    text-align: center;
-    margin-top: 5;
-}
-
-.texto {
-    margin-left: 20;
-    margin-top: 20;
-    font-size: 20;
-}
-
-#startButton {
-    background-color: green;
-    margin-bottom: 10px;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    width: 100%; 
-}
-
-#startButton:hover {
-    background-color: darkgreen;
-}
-
-#contadorTiempo {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px;
-}
+  }
+  
+  h1 {
+      display: flex;
+      justify-content: center;
+      color: white;
+  }
+  body {
+      font-family: Arial;
+      font-size: 16px;
+      line-height: 1.6;
+      background-image: url('img/wallpapersden.com_escape-hd-minimal-cool_1920x1080.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      margin: 0;
+  }
+  
+  #titulo {
+      text-align: center;
+      background-color: #ffe680;
+  }
+  
+  #time {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin: 10px;
+      border-radius: 10px;
+      background-color: #ff7043;
+  }
+  
+  #dificultad {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      flex-grow: 1;
+  }
+  
+  #dif {
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 15px;
+  }
+  
+  #finalizar {
+      background-color: red;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+  }
+  
+  #finalizar:hover {
+      background-color: darkred;
+  }
+  
+  #pista {
+      margin-top: 10px;
+      width: 100%;
+      background-color: gray;
+      border-radius: 5px;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+  }
+  
+  #pista:hover {
+      background-color: darkgray;
+  }
+  
+  #contenedor-externo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 60%;
+      flex-grow: 2;
+      margin-left: 10px;
+      gap: 10px;
+      /* Espacio entre los elementos */
+  }
+  
+  #usedLetters,
+  #wordContainer {
+      width: 100%;
+      background-color: white;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #contenedor-central {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 50vh;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 100%;
+      margin-top: 20px;
+  }
+  
+  main {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-top: 30px;
+      align-items: stretch;
+      flex-wrap: wrap;
+  }
+  
+  .fondoBlanco {
+      background-color: white;
+      border-radius: 10px;
+      margin-left: 10px;
+  }
+  
+  #cajasDerechas {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 4;
+      margin-left: 15px;
+      border-radius: 10px;
+      gap: 15px;
+  }
+  
+  .caja {
+      width: 90%;
+      height: 50%;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cajados {
+      width: 90%;
+      height: 10%;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .titulos {
+      text-align: center;
+      margin-top: 5;
+  }
+  
+  .log {
+      text-align: center;
+      margin-top: 5;
+  }
+  
+  .texto {
+      margin-left: 20;
+      margin-top: 20;
+      font-size: 20;
+  }
+  
+  #startButton {
+      background-color: green;
+      margin-bottom: 10px;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+  }
+  
+  #startButton:hover {
+      background-color: darkgreen;
+  }
+  
+  #contadorTiempo {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 10px;
+      color: white;
+  }
