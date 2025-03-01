@@ -25,7 +25,7 @@ let partidasGanadas = 0;
 let partidasPerdidas = 0;
 
 // Lista de palabras
-const palabras = ["GATO", "FRANK", "LOU", "DANI"];
+const palabras = ["GATO", "FRANK", "LOU", "DANI", "AGUS", "MARIO"];
 
 // Función para iniciar el juego
 function iniciarJuego() {
